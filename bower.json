@@ -1,0 +1,16 @@
+{
+  "name": "rtv",
+  "version": "1.0",
+  "authors": [
+	"danielfpedro <danielfpedro@gmail.com>"
+  ],
+  "description": "Site de vídeos de rap",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "jquery": "1.*",
+  	"bootstrap": "3.*",
+    "normalize.css": "latest",
+    "modernizr": "latest"
+  }
+}
