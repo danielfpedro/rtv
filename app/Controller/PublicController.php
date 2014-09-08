@@ -19,7 +19,9 @@ class PublicController extends AppController {
 
 		$destaques = [0, 1, 2];
 
-		$this->set(compact('videos_list', 'destaques', 'title_for_layout'));
+		$artists_featured = [0, 1, 2, 3];
+
+		$this->set(compact('videos_list', 'artists_featured','destaques', 'title_for_layout'));
 	}
 	public function player(){
 		$title_for_layout = 'Chefe de quadrilha / Cone Crew Diretoria - ' . $this->app_name;
@@ -35,6 +37,22 @@ class PublicController extends AppController {
 
 		$destaques = [0, 1, 2];
 
-		$this->set(compact('videos_list', 'destaques', 'title_for_layout'));
+		$artistas_relacionados = [0, 1,2 ,3 ,4 ,5 ,6 ,7 ,8 ,9];
+
+		$links = array(array('icon'=> '', 'url'=> '', 'label'=> 'facebook.com/eminem'));
+		$this->set(compact('artistas_relacionados', 'videos_list', 'links', 'destaques', 'title_for_layout'));
+	}
+	public function search(){
+		$title_for_layout = 'Snoop Dogg - ' . $this->app_name;
+		$videos_list = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+
+		$destaques = [0, 1, 2];
+
+		$artists = [0, 1,2 ,3 ,4 ,5 ,6 ,7 ,8 ,9];
+
+		$playlists = [0, 1, 2, 3, 4 ,5];
+
+		$links = array(array('icon'=> '', 'url'=> '', 'label'=> 'facebook.com/eminem'));
+		$this->set(compact('artists', 'videos_list', 'playlists', 'links', 'destaques', 'title_for_layout'));
 	}
 }

@@ -35,9 +35,13 @@
 
 		<?php echo $this->Session->flash(); ?>
 
-		<?php echo $this->element('Public/navbar_loggedin'); ?>
+		<div style="margin-bottom: 70px;">
+			<?php echo $this->element('Public/navbar_loggedin'); ?>
+		</div>
 
 		<?php echo $this->fetch('content'); ?>
+
+		<?php echo $this->element('Public/footer'); ?>
 
 		
 		<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->

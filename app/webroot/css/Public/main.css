@@ -1,33 +1,72 @@
+.label-danger{
+	background-color: #e74c3c;
+}
+.btn{
+	border: 0;
+	font-weight: bold;
+}
+.btn-primary{
+	background-color: #3498db;
+}
+.btn-danger{
+	font-weight: bold;
+	background-color: #e74c3c;
+	text-shadow: 0 1px 0px rgba(0, 0, 0, 0.2);
+}
+.brn-danger:hover{
+	background-color: #c0392b;
+}
+.btn-default{
+	border: 1px solid #bdc3c7;
+	background-color: #ecf0f1;
+	font-weight: bold;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
 /*utilities*/
 .text-shadow-dark-full{
 	text-shadow: 0px 1px 0px rgba(0, 0, 0, 1);
+}
+.text-shadow-dark-half{
+	text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5);
 }
 .text-shadow-light-full{
 	text-shadow: 0px 1px 0px rgba(255, 255, 255, 1);
 }
 .container{
-	width: 1100px;
+	width: 1000px;
 }
 
 /*MEDIA*/
 .my-media{
+	font-family: "Myriad Pro";
 	width: 100%;
 	height: auto;
 	overflow: hidden;
+	margin-bottom: 20px;
+}
+.my-media-footer{
+	margin-top: 10px;
 }
 .my-media-cover{
 	background-image: url(../../img/play.png);
 	background-repeat: no-repeat;
-	background-position: center center;
-	background-color: #000;
+	background-position: center center;	
 	width: 100%;
 	height: auto;
 	overflow: hidden;
+	background-color: #000;
+	background-size: 25%;
 }
 .my-media-cover img{
 }
+.my-media-btn{
+	font-size: 18px;
+	color: #e74c3c;
+	border: 0;
+	background: none;
+}
 .my-media-cover img:hover{
-	opacity: 0.2;
+	opacity: 0.1;
 	/*-moz-opacity: 0.70;
 	-khtml-opacity: 0.70;
 	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=70);
@@ -46,7 +85,6 @@
 	width: 100%;
 }
 a.my-media-title, a.my-media-artist-name{
-	text-decoration: none;
 	color: #000;
 }
 a.my-media-title{
@@ -56,29 +94,164 @@ a.my-media-title{
 }
 a.my-media-artist-name{
 }
-a.my-media-artist-name:hover{
-	color: #2980b9;
-}
 .my-media-views{
-	font-size: 9px;
-	text-transform: uppercase;
+	font-size: 11px;
 }
-
-
 
 /*TOP*/
+a.my-top-media-title, a.my-top-media-artist{
+	font-family: "Myriad Pro";
+	text-decoration: none;
+	font-weight: bold;
+	display: block;
+}
 a.my-top-media-title{
-	color: #FFF;
-	font-size: 30px;
+	color: #000;
+	font-size: 32px;
+	margin-bottom: -10px;
 }
 a.my-top-media-artist{
-	color: #FFF;
-	font-size: 18px;
+	color: #000;
+	font-size: 22px;
+}
+.my-top-media-image{
+
+}
+.my-top-media-image:hover{
+	opacity: .8;
+}
+.my-top-media-image-wrap{
+
+	position: relative;
+	margin-bottom: 10px;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	background-color: #000;
+}
+.my-top-description{
+	font-family: "Myriad Pro";
+	font-size: 28px;
+	text-align: center;
+	margin-bottom: 20px;
+	margin-top: 30%;
+}
+.sector-title{
+	font-family: "COCOGOOSE";
+	border-left: 3px solid #e74c3c;
+	padding-left: 8px;
+	text-transform: uppercase;
+	color: #000;
+	margin: 40px 0 15px 0;
+
+	height: 26px;
+	line-height: 26px;
+	font-size: 14px;
+}
+.sector-title-sm{
+	height: 20px;
+	line-height: 20px;
+	font-size: 12px;
 }
 
-.sector-title{
-	font-size: 16px;
-	font-weight: bold;
-	border-left: 4px solid red;
+/*FOOTER*/
+.footer-social img{
+	width: 32px;
+}
+
+/*PROFILE*/
+.profile-cover{
+	height: 300px;
+	background-color: #EEE;
+	margin-top: -20px;
+}
+
+.artists-featured{
+	border-left: 4px solid #e74c3c;
 	padding-left: 8px;
+}
+
+/*PLAYLIST PLAYER*/
+.playlist{
+	z-index: 10;
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.7);
+	width: 30%;
+	height: 100%;
+	right:0;
+	top: 0;
+}
+.playlist-content{
+	height: 100%;
+	overflow: auto;
+	padding: 10px 15px 50px 15px;
+	color: #FFF;
+}
+.playlist-content > .media > a.active, .playlist-content > .media:hover {
+	border-left: 3px solid red;
+}
+.playlist a{
+	color: #FFF;
+}
+.playlist > .sector-title{
+	color: #FFF;
+}
+
+/*PLAYER*/
+.player-wrap{
+	background-color: #111;
+}
+.player-header{
+	background-color: #000;
+	margin-top: -20px;
+}
+
+/*HOME*/
+.home-header{
+	/*background-image: url(../../img/home-top-bg.jpg);*/
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-color: #EEE;
+	margin-top: -20px;
+	padding: 20px 0;
+	color:#000;
+	margin-bottom: 20px;
+}
+.artists-related-container{
+	clear: both;
+
+}
+.artists-related-thumb{
+	margin-bottom: 4%;
+	margin-right: 4%;
+	width: 29%;
+	float: left;
+}
+.artists-related-thumb:last-child{
+	margin-right: 0;
+}
+
+.my-navbar-search{
+	border: 0;
+	background-color: #EEE;
+	width: 280px!important;
+	box-shadow: none!important;
+	padding-left: 18px;
+}
+.my-navbar-submit-btn{
+	outline: none;
+	background: none;
+	border: 0;
+	margin-left: -38px;
+	color: #8F8F8F;
+}
+
+.play-lg{
+	position: absolute;
+	width: 60px;
+	margin-left: -30px;
+	margin-top: -30px;
+	left: 50%;
+	top: 50%;
 }
