@@ -39,7 +39,11 @@ class PublicController extends AppController {
 
 		$artistas_relacionados = [0, 1,2 ,3 ,4 ,5 ,6 ,7 ,8 ,9];
 
-		$links = array(array('icon'=> '', 'url'=> '', 'label'=> 'facebook.com/eminem'));
+		$links = array(
+			array('icon'=> 'fa-facebook-square', 'url'=> '', 'label'=> 'facebook.com/eminem'),
+			array('icon'=> 'fa-twitter-square', 'url'=> '', 'label'=> 'twitter.com/eminem'),
+			array('icon'=> 'fa-link', 'url'=> '', 'label'=> 'eminem.com'),
+		);
 		$this->set(compact('artistas_relacionados', 'videos_list', 'links', 'destaques', 'title_for_layout'));
 	}
 	public function search(){

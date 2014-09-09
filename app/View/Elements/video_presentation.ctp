@@ -3,9 +3,9 @@
 		<?=$this->Html->image('placeholder.jpg', array('url'=> '#' ,'class'=> 'img-responsive')); ?>
 	</div>
 	<div class="my-media-body">
-		<?php echo $this->Html->link('Eminem', array(), array('class'=> 'my-media-title')) ?>
+		<?php echo $this->Html->link('Not Afraid', array('action'=> 'player'), array('class'=> 'my-media-title')) ?>
 		<br>
-		<?php echo $this->Html->link('Not Afraid', array(), array('class'=> 'my-media-artist-name')) ?>
+		<?php echo $this->Html->link('Eminem', array('action'=> 'profile'), array('class'=> 'my-media-artist-name')) ?>
 		<div class="my-media-footer">
 			<span class="my-media-views text-muted">123 Mil visualizações</span>
 			

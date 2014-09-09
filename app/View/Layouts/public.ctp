@@ -26,6 +26,7 @@
 
 			echo $this->Html->script('/vendors/modernizr/modernizr');
 		?>
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
 	</head>
 	<body>
@@ -36,7 +37,7 @@
 		<?php echo $this->Session->flash(); ?>
 
 		<div style="margin-bottom: 70px;">
-			<?php echo $this->element('Public/navbar_loggedin'); ?>
+			<?php echo $this->element('Public/navbar_not_loggedin'); ?>
 		</div>
 
 		<?php echo $this->fetch('content'); ?>

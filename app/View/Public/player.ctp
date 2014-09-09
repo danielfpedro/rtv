@@ -9,18 +9,7 @@
 				$url_profile = array('action'=> 'profile');
 			?>
 			<div class="col-md-3">
-				<div class="my-media">
-					<div class="my-media-cover">
-						<?=$this->Html->image('placeholder.jpg', array('url'=> $url_player ,'class'=> 'img-responsive')); ?>
-					</div>
-					<div class="my-media-body">
-						<?php echo $this->Html->link('Foobar', $url_player, array('class'=> 'my-media-title')) ?>
-						<br>
-						<?php echo $this->Html->link('Bar Song Name', $url_profile, array('class'=> 'my-media-artist-name')) ?>
-						<br>
-						<span class="my-media-views">123 mil visualizações</span>
-					</div>
-				</div>
+				<?php echo $this->element('video_presentation'); ?>
 			</div>
 		<?php endforeach ?>
 	</div>
@@ -32,18 +21,7 @@
 				$url_profile = array('action'=> 'profile');
 			?>
 			<div class="col-md-3">
-				<div class="my-media">
-					<div class="my-media-cover">
-						<?=$this->Html->image('placeholder.jpg', array('url'=> $url_player ,'class'=> 'img-responsive')); ?>
-					</div>
-					<div class="my-media-body">
-						<?php echo $this->Html->link('Foobar', $url_player, array('class'=> 'my-media-title')) ?>
-						<br>
-						<?php echo $this->Html->link('Bar Song Name', $url_profile, array('class'=> 'my-media-artist-name')) ?>
-						<br>
-						<span class="my-media-views">123 mil visualizações</span>
-					</div>
-				</div>
+				<?php echo $this->element('video_presentation'); ?>
 			</div>
 		<?php endforeach ?>
 	</div>

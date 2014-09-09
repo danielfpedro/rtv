@@ -16,7 +16,7 @@
 		<?php endforeach ?>
 	</div>
 
-	<div class="row">
+	<!-- <div class="row">
 		<div class="col-md-12 ">
 			<div class="artists-featured">
 				<div class="row">
@@ -28,9 +28,13 @@
 									echo $this->Html->link($img, array('action'=> 'profile'), array('class'=> 'pull-left', 'escape'=> false));
 								?>
 								<div class="media-body">
-									<h5 class="media-heading">Foobar</h5>
-									<h6 class="text-muted">123 Vídeos e 2134 seguidores</h6>
-									<button type="button" class="btn btn-primary btn-xs pull-right">Seguir</button>
+									<h4 class="media-heading">Foobar</h4>
+									<span class="label label-default">12 Seguidores</span>
+									<br>
+									<button type="button" class="btn btn-primary btn-sm btn-block" style="margin-top: 10px;">
+										<span class="glyphicon glyphicon-ok"></span>&nbsp;
+										Seguir
+									</button>
 								</div>
 							</div>
 						</div>
@@ -38,7 +42,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 	<div class="row">
 		<div class="col-md-12">
