@@ -26,8 +26,8 @@
 		</form>
 
 		<div class="pull-right">
+			<button type="button" class="btn btn-primary btn-sm navbar-btn">Criar conta</button>
 			<button type="button" class="btn btn-default btn-sm navbar-btn">Entrar</button>
-			<button type="button" class="btn btn-danger btn-sm navbar-btn">Criar conta</button>
 		</div>
 
 	</div><!-- /.navbar-collapse -->

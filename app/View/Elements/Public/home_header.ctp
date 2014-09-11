@@ -17,14 +17,17 @@
 
 					<?php echo $this->Html->image('play.png', array('class'=> 'play-lg')); ?>
 				</div>
+
 				<span class="label label-danger" style="font-size: 13px;">Destaque</span>
+				<br>
 				<?php
 					echo $this->Html->link(
-						'Snopp Dogg',
+						'Next Episode',
 						$url_player,
 						array('class'=> 'my-top-media-title text-shadow-light-full'))
 				?>
-				<?php echo $this->Html->link('Next Episode', $url_profile, array('class'=> 'my-top-media-artist text-shadow-light-full')) ?>
+				<br>
+				<?php echo $this->Html->link('Snoop Dogg', $url_profile, array('class'=> 'my-top-media-artist text-shadow-light-full')) ?>
 			</div>
 		</div>
 	</div>

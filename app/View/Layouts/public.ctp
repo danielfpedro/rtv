@@ -50,7 +50,7 @@
 		<?php echo $this->Html->script('/vendors/bootstrap/dist/js/bootstrap.min'); ?>
 
 		<?php echo $this->fetch('script'); ?>
-		<?php echo $this->Html->script('main') ?>
+		<?php echo $this->Html->script('Public/main') ?>
 
 		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 		<script>

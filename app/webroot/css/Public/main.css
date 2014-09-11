@@ -12,9 +12,15 @@ body{
 .btn{
 	border: 0;
 	font-weight: bold;
+	font-size: 13px;
 }
 .btn-primary{
+	border: 1px solid #2980b9;
 	background-color: #3498db;
+	text-shadow: 0 1px 0px rgba(0, 0, 0, 0.2);
+}
+.btn-primary:hover{
+	background-color: #2980b9;
 }
 .btn-danger{
 	font-weight: bold;
@@ -72,6 +78,7 @@ body{
 	color: #e74c3c;
 	border: 0;
 	background: none;
+	display: none;
 }
 .my-media-cover img:hover{
 	opacity: 0.1;
@@ -111,7 +118,6 @@ a.my-top-media-title, a.my-top-media-artist{
 	font-family: 'PT Sans', sans-serif;
 	text-decoration: none;
 	font-weight: bold;
-	display: block;
 }
 a.my-top-media-title{
 	color: #000;
@@ -195,24 +201,38 @@ a.my-top-media-artist{
 	z-index: 10;
 	position: absolute;
 	background-color: rgba(0, 0, 0, 0.7);
+	/*Largura está no jquery*/
 	width: 30%;
 	height: 100%;
 	right:0;
 	top: 0;
 	overflow: hidden;
 }
+.playlist-btn-action{
+	border: 0;
+	background: none;
+	bottom: 0;
+	/*outline: none;*/
+}
 .playlist-title{
-	display: table;
 	height: 10%;
 	color: #FFF;
 	padding-left: 15px;
 	font-size: 16px;
 	font-weight: bold;
-	line-height: -10%;
+	position: relative;
 }
-.playlist-title div{
-	display: table-cell;
+.playlist-title h3{
+	position: absolute;
+	top: 50%;
+	text-transform: uppercase;
+	padding-left: 8px;
+	font-family: 'PT Sans', sans-serif;
+	border-left: 3px solid #e74c3c;
 	vertical-align: middle;
+	font-size: 16px;
+	margin-top: -8px;
+	font-weight: bold;
 }
 .playlist-content{
 	height: 90%;
@@ -314,9 +334,10 @@ a.my-top-media-artist{
 }
 
 .player-song-name{
-
+	font-weight: bold;
 }
 .player-artist-name a{
+	font-weight: bold;
 	color: #333;
 }
 .player-btns{

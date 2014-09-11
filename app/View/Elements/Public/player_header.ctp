@@ -8,7 +8,10 @@
 					<div class="playlist hidden-xs">
 						<!-- <h6 class="pull-right " style="color: #FFF;padding-right: 5px;">Playlist</h6> -->
 						<!-- <div class="sector-title">Ouvir na loja</div> -->
-						<div class="playlist-title"><div>Ouvir na Loja</div></div>
+						<div class="playlist-title">
+							<h3>Ouvir na Loja</h3>
+							<h6>Playlist</h6>
+						</div>
 						<div class="playlist-content">
 							<?php foreach ([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] as $video): ?>
 								<div class="media">
@@ -19,14 +22,46 @@
 												array('class'=> 'media-object', 'width'=> '70px', 'height'=> '50px'));
 										?>
 									</a>
-									<div class="media-body">
+									<div class="media-body playlist-body">
 										<span>
-											<?php echo $this->Html->link('Foobar', array('controller'=> '', 'action'=> ''), array()); ?>
+											<?php
+												echo $this->Html->link('Foobar', array('controller'=> '', 'action'=> ''),
+													array('class'=> 'text-shadow-dark-full')); ?>
 										</span>
 										<br>
 										<span>
-											<?php echo $this->Html->link('Foo Song name', array('controller'=> '', 'action'=> ''), array()); ?>
+											<?php echo $this->Html->link('Foo Song name', array('controller'=> '', 'action'=> ''), array('class'=> 'text-shadow-dark-full')); ?>
 										</span>
+										<button type="button" class="playlist-btn-action pull-right dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown">
+											<span class="glyphicon glyphicon-chevron-down text-shadow-dark-full"></span>
+										</button>
+										<ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dropdownMenu1">
+											<li role="presentation">
+												<a role="menuitem" tabindex="-1" href="#">
+													<span class="glyphicon glyphicon-heart"></span>
+													<span class="glyphicon glyphicon-ok pull-right"></span>
+													Favoritos
+												</a>
+											</li>
+											<li role="presentation" class="divider"></li>
+											<li role="presentation">
+												<a role="menuitem" tabindex="-1" href="#">
+													<span class="glyphicon glyphicon-share-alt"></span>
+													Compartilhar
+												</a>
+											</li>
+											<li role="presentation" class="divider"></li>
+											<li role="presentation" class="dropdown-header">Playlists</li>
+											<li role="presentation">
+												<a role="menuitem" tabindex="-1" href="#">
+													<span class="glyphicon glyphicon-plus"></span>
+													Criar uma nova playlist
+												</a>
+											</li>
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Ouvir na loja</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Anos 90</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Eminem e Dre</a></li>
+										</ul>
 									</div>
 								</div>
 							<?php endforeach ?>
@@ -57,4 +92,7 @@
 			</div>
 		</div>
 	</div>
+
+	<hr>
+
 </div>
