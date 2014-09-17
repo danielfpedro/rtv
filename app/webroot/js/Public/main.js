@@ -3,7 +3,7 @@ $(function(){
 		$(this).find('.my-media-btn')
 			.fadeIn('fast');
 	}, function(){
-		$(this).('.my-media-btn')
+		$(this).find('.my-media-btn')
 			.fadeOut('fast');
 	});
 });

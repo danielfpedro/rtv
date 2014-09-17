@@ -5,7 +5,7 @@
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-md-6">
+		<div class="col-md-7">
 			<div class="row">
 				<div class="col-md-12">
 					<h4 class="sector-title">Vídeos</h4>
@@ -16,23 +16,12 @@
 						$url_profile = array('action'=> 'profile');
 					?>
 					<div class="col-md-4">
-						<div class="my-media">
-							<div class="my-media-cover">
-								<?=$this->Html->image('placeholder.jpg', array('url'=> $url_player ,'class'=> 'img-responsive')); ?>
-							</div>
-							<div class="my-media-body">
-								<?php echo $this->Html->link('Foobar', $url_player, array('class'=> 'my-media-title')) ?>
-								<br>
-								<?php echo $this->Html->link('Bar Song Name', $url_profile, array('class'=> 'my-media-artist-name')) ?>
-								<br>
-								<span class="my-media-views">123 mil visualizações</span>
-							</div>
-						</div>
+						<?php echo $this->element('video_presentation'); ?>
 					</div>
 				<?php endforeach ?>
 			</div>
 		</div>
-		<div class="col-md-4">
+		<div class="col-md-2">
 			<div class="col-md-12">
 				<h4 class="sector-title">Playlists</h4>
 				<?php foreach ($playlists as $playlist): ?>
@@ -47,7 +36,7 @@
 				<?php endforeach ?>
 			</div>
 		</div>
-		<div class="col-md-2">
+		<div class="col-md-3">
 			<div class="row">
 				<div class="col-md-12">
 					<h4 class="sector-title">Artistas</h4>

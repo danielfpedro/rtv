@@ -58,8 +58,14 @@ body{
 	overflow: hidden;
 	margin-bottom: 20px;
 }
+.my-media-list-options{
+	margin-top: -20px;
+	margin-right: 15px;
+}
 .my-media-footer{
 	margin-top: 10px;
+	height: 30px;
+	/*background-color: red;*/
 }
 .my-media-cover{
 	background-image: url(../../img/play.png);
@@ -202,11 +208,12 @@ a.my-top-media-artist{
 	position: absolute;
 	background-color: rgba(0, 0, 0, 0.7);
 	/*Largura está no jquery*/
-	width: 30%;
-	height: 100%;
+	width: 35%;
+	height: 80%;
 	right:0;
 	top: 0;
 	overflow: hidden;
+	display: none;
 }
 .playlist-btn-action{
 	border: 0;
