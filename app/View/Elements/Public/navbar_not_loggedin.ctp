@@ -14,9 +14,9 @@
 
 	<!-- Collect the nav links, forms, and other content for toggling -->
 	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		<form class="navbar-form navbar-left" role="Pesquisar">
+		<form class="navbar-form navbar-left" role="Pesquisar" action="<?=Router::url(['action'=> 'search'])?>" method="GET">
 			<div class="input-group">
-				<input type="text" class="form-control search-input" placeholder="Pesquisar">
+				<input type="text" class="form-control search-input" placeholder="Pesquisar" name="q">
 				<span class="input-group-btn">
 					<button class="btn btn-default search-btn" type="button">
 						<span class="glyphicon glyphicon-search"></span>

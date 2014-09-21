@@ -1,4 +1,21 @@
 @import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700);
+
+@media (max-width: 768px) {
+
+}
+@media (min-width: 767px) and (max-width: 991px) {
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+	.container{
+		width: 980px;
+	}
+}
+@media (min-width: 1200px) {
+	.container{
+		width: 980px;
+	}
+}
+
 body{
 	font-family: 'PT Sans', sans-serif;
 }
@@ -10,6 +27,7 @@ body{
 	background-color: #e74c3c;
 }
 .btn{
+	outline: 0;
 	border: 0;
 	font-weight: bold;
 	font-size: 13px;
@@ -46,9 +64,6 @@ body{
 }
 .text-shadow-light-full{
 	text-shadow: 0px 1px 0px rgba(255, 255, 255, 1);
-}
-.container{
-	width: 1000px;
 }
 
 /*MEDIA*/
@@ -196,57 +211,53 @@ a.my-top-media-artist{
 	margin-top: -20px;
 }
 
-.artists-featured{
-	margin-top: 20px;
-	border-left: 3px solid #e74c3c;
-	padding-left: 20px;
-}
-
 /*PLAYLIST PLAYER*/
-.playlist{
+.playlist-title, .playlist-content{
 	z-index: 10;
 	position: absolute;
-	background-color: rgba(0, 0, 0, 0.7);
-	/*Largura está no jquery*/
+	background-color: rgba(0, 0, 0, 0.9);
 	width: 35%;
-	height: 80%;
+	height: 15%;
 	right:0;
-	top: 0;
 	overflow: hidden;
+	color: #FFF;
 	display: none;
 }
+.playlist-title{
+	top: 0;
+}
+.playlist-title div{
+	margin-left: 15px;
+	margin-top: 20px;
+	height: 100%;
+}
+.playlist-title div h1, .playlist-title div h6 {
+	font-weight: bold;
+	margin:  0;
+	text-transform: uppercase;
+	font-size: 20px;
+}
+.playlist-title div h1{
+	border-left: 3px solid red;
+	padding-left: 5px;
+}
+.playlist-title div h6{
+	font-size: 9px;
+	margin-bottom: 5px;
+}
+.playlist-content{
+	/*background-color: red;*/
+	z-index: 9;
+	bottom: 0;
+	height: 85%;
+	overflow: auto!important;
+	padding: 15px;
+}
+
 .playlist-btn-action{
 	border: 0;
 	background: none;
 	bottom: 0;
-	/*outline: none;*/
-}
-.playlist-title{
-	height: 10%;
-	color: #FFF;
-	padding-left: 15px;
-	font-size: 16px;
-	font-weight: bold;
-	position: relative;
-}
-.playlist-title h3{
-	position: absolute;
-	top: 50%;
-	text-transform: uppercase;
-	padding-left: 8px;
-	font-family: 'PT Sans', sans-serif;
-	border-left: 3px solid #e74c3c;
-	vertical-align: middle;
-	font-size: 16px;
-	margin-top: -8px;
-	font-weight: bold;
-}
-.playlist-content{
-	height: 90%;
-	overflow: auto;
-
-	padding: 0 15px 15px 15px;
-	color: #FFF;
 }
 .playlist-content > .media > a.active, .playlist-content > .media:hover {
 	border-left: 3px solid #e74c3c;
@@ -358,4 +369,18 @@ a.my-top-media-artist{
 	font-weight: normal;
 	padding-right: 60px;
 	padding-left: 60px;
+}
+
+.artists-featured{
+	margin-top: 20px;
+	border-left: 3px solid #e74c3c;
+	padding-left: 10px;
+}
+.artists-featured-body{
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space:nowrap;
+}
+.artists-featured-body > .artists-featured-title{
+	font-size: 18px;
 }

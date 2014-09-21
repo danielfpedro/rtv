@@ -5,7 +5,17 @@
 	<div class="my-media-body">
 		<?php echo $this->Html->link('Not Afraid', array('action'=> 'player'), array('class'=> 'my-media-title')) ?>
 		<br>
-		<?php echo $this->Html->link('Eminem', array('action'=> 'profile'), array('class'=> 'my-media-artist-name')) ?>
+		<?= $this->Html->link(
+				'Eminem',
+				array('action'=> 'profile'),
+				array(
+					'class'=> 'my-media-artist-name',
+				)
+			)
+		?>
+		<div id="popover" class="">
+			<?= $this->element('profile_popover') ?>
+		</div>
 		<div class="my-media-footer">
 			<span class="my-media-views text-muted">123 Mil visualizações</span>
 			

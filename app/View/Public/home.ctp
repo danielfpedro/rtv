@@ -16,7 +16,7 @@
 		<?php endforeach ?>
 	</div>
 
-	<!-- <div class="row">
+	<div class="row">
 		<div class="col-md-12 ">
 			<div class="artists-featured">
 				<div class="row">
@@ -27,12 +27,13 @@
 									$img = $this->Html->image('placeholder_squared.png', array('class'=> 'img-circle media-object'));
 									echo $this->Html->link($img, array('action'=> 'profile'), array('class'=> 'pull-left', 'escape'=> false));
 								?>
-								<div class="media-body">
-									<h4 class="media-heading">Foobar</h4>
-									<span class="label label-default">12 Seguidores</span>
+								<div class="media-body artists-featured-body">
+									<span class="media-heading artists-featured-title">Cone Crew Diretoriad ds</span>
 									<br>
-									<button type="button" class="btn btn-primary btn-sm btn-block" style="margin-top: 10px;">
-										<span class="glyphicon glyphicon-ok"></span>&nbsp;
+<!-- 									<span class="label label-default" style="font-size: 10px;">12 Seguidores</span>
+									<span class="label label-default" style="font-size: 10px;">12 Seguidores</span>
+									<br> -->
+									<button type="button" class="btn btn-primary btn-sm btn-xs" style="margin-top: 6px; padding: 0 15px;">
 										Seguir
 									</button>
 								</div>
@@ -42,7 +43,7 @@
 				</div>
 			</div>
 		</div>
-	</div> -->
+	</div>
 
 	<div class="row">
 		<div class="col-md-12">

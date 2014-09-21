@@ -1,4 +1,5 @@
 <?php echo $this->Html->script('Public/player', array('inline'=> false)); ?>
+
 <?php echo $this->element('Public/player_header'); ?>
 
 <div class="container">
