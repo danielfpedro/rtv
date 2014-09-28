@@ -13,9 +13,6 @@
 				)
 			)
 		?>
-		<div id="popover" class="">
-			<?= $this->element('profile_popover') ?>
-		</div>
 		<div class="my-media-footer">
 			<span class="my-media-views text-muted">123 Mil visualizações</span>
 			

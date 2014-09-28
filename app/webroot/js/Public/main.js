@@ -1,4 +1,5 @@
 $(function(){
+	
 	$('.my-media').hover(function(){
 		$(this).find('.my-media-btn')
 			.stop()
@@ -10,23 +11,26 @@ $(function(){
 	});
 
 
-	var options = {
-		'trigger': 'click',
-		'placement': 'top',
-		'html': true,
-		'container': 'body',
-		'content': function(){
-			return $('#popover').html();
-		}
-	};
-	$('a.my-media-artist-name').popover(options);
+	// var options = {
+	// 	'trigger': 'hover',
+	// 	'placement': 'top',
+	// 	'html': true,
+	// 	'delay': {'hide': 1500},
+	// 	'container': 'body',
+	// 	'content': function(){
+	// 		return $('#popover').html();
+	// 	}
+	// };
+	// $('a.my-media-artist-name').popover(options);
 
-	$('a.my-media-artist-name').click(function(){
-		return false;
-	});
+	// $('a.my-media-artist-name').click(function(){
+	// 	return false;
+	// });
 
-	$('body').on('mouseout', 'div.popover', function(){
-		alert('Saiu');
-		// $('.my-media-artist-name').popover('hide');
-	});
+	// $('body').on('mouseleave', 'div.popover', function(){
+	// 	$('a.my-media-artist-name').popover('hide');
+	// });
+	// $('body').on('mouseenter', '.popover', function(){
+	// 	$('.my-media-artist-name').popover('show');
+	// });
 });
